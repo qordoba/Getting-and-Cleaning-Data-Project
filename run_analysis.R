@@ -43,3 +43,7 @@ names(Subject) <- "subject"
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 Data <- cbind(Subject, Y, X)
 write.table(Data, "merged selected data.txt")
+
+DT <- data.table(Data)
+clean_and_tidy<-DT[,lapply(.SD,mean),by="activity,subject"]
+write.table(clean_and_tidy, "clean & tidy data.txt")
