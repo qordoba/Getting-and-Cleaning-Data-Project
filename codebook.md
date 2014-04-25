@@ -29,11 +29,18 @@ The experiment is done in the same order as the 5 steps mentioned earlier.
 
 N.B: To run the R script, the files must be loaded in the working directory under a directory called "UCI HAR Dataset"
 
-## H2 The R script works as follows 
+##  The R script works as follows 
 
-### H3 First Step: Reading Data
+###  First Step: Reading Data
 The first step is to read the data and bind the train with the test data. 
 
-### H3 Second Step:
-### H3 Third Step:
-### H3 Fourth Step:
+### Second Step: Extracting certain measurements
+Extracts only the measurements on the mean and standard deviation for each measurement. 
+the features files has the name of each measurement, we use the "grep" function to extract the names that has "mean" or "std" in it. 
+
+### Third Step: Naming properly
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive activity names. 
+
+### Fourth Step: Creating the tidy data
+Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
