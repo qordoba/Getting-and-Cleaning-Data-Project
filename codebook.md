@@ -29,11 +29,11 @@ The experiment is done in the same order as the 5 steps mentioned earlier.
 
 N.B: To run the R script, the files must be loaded in the working directory under a directory called "UCI HAR Dataset"
 
-Alt-H2 The R script works as follows 
+## H2 The R script works as follows 
 
-Alt-H3 First Step: Reading Data
+### H3 First Step: Reading Data
 The first step is to read the data and bind the train with the test data. 
 
-Alt-H3 Second Step:
-Alt-H3 First Step:
-Alt-H3 First Step:
+### H3 Second Step:
+### H3 Third Step:
+### H3 Fourth Step:
